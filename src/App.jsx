@@ -4,6 +4,7 @@ import FirstTable from './components/FirstTable'
 import NewIncidents from "./components/NewIncidents"
 import Notifications from './components/Notifications'
 import Settings from './components/Settings'
+import AccidentReport from './components/AccidentReport'
 
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
       {/* <FirstTable/> */}
       {/* <NewIncidents/> */}
       {/* <Notifications/> */}
-      <Settings/>
+      {/* <Settings/> */}
+      <AccidentReport/>
     </div>
   )
 }
