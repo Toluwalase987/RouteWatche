@@ -9,55 +9,72 @@ import purple from "../assets/images/purplelight.png"
 import red from "../assets/images/redlight.png"
 
 const data = [
-  {
-    title: "High way robbery",
-    location: "Yaba, Lagos",
-    nature: "Robbery",
-    time: "11:15pm | 24 Oct, 2023",
-    image: red,
-    action: "View Details",
-  },
-  {
-    title: "High way robbery",
-    location: "Yaba, Lagos",
-    nature: "Robbery",
-    time: "11:15pm | 24 Oct, 2023",
-    image: purple,
-    action: "View Details",
-  },
-  {
-    title: "High way robbery",
-    location: "Yaba, Lagos",
-    nature: "Robbery",
-    time: "11:15pm | 24 Oct, 2023",
-    image: red,
-    action: "View Details",
-  },
-  {
-    title: "High way robbery",
-    location: "Yaba, Lagos",
-    nature: "Robbery",
-    time: "11:15pm | 24 Oct, 2023",
-    image: purple,
-    action: "View Details",
-  },
-  {
-    title: "High way robbery",
-    location: "Yaba, Lagos",
-    nature: "Robbery",
-    time: "11:15pm | 24 Oct, 2023",
-    image: red,
-    action: "View Details",
-  },
-  {
-    title: "High way robbery",
-    location: "Yaba, Lagos",
-    nature: "Robbery",
-    time: "11:15pm | 24 Oct, 2023",
-    image: purple,
-    action: "View Details",
-  },
-];
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: red,
+      action: "Approved",
+    },
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: purple,
+      action: "Rejected",
+    },
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: red,
+      action: "Approved",
+    },
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: purple,
+      action: "Approved",
+    },
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: red,
+      action: "Approved",
+    },
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: purple,
+      action: "Rejected",
+    },
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: purple,
+      action: "Rejected",
+    },
+    {
+      title: "High way robbery",
+      location: "Yaba, Lagos",
+      nature: "Robbery",
+      time: "11:15pm | 24 Oct, 2023",
+      image: purple,
+      action: "Approved",
+    },
+  ];
+
 export default function FirstTable() {
   return (
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-poppins">
@@ -91,7 +108,9 @@ export default function FirstTable() {
                 {val.time}
               </td>
               <td className="py-[1rem] border-b-[0.3px] border-[#e4e4e7] grid justify-center items-center">
-                <button className="bg-[#2E007F] p-[0.5rem] px-[1rem] rounded-[10px] text-white">{val.action}</button>
+                <select name="" id="" className={`${val.action === "Approved" ? 'bg-[#00831D]' : 'bg-[#111111]'} w-[10rem] rounded-[5px] px-[1.8rem] py-[0.5rem] text-white`}>
+                    <option value="">{val.action}</option>
+                </select>
               </td>
             </tr>
           );
