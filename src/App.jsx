@@ -5,6 +5,7 @@ import NewIncidents from "./components/NewIncidents"
 import Notifications from './components/Notifications'
 import Settings from './components/Settings'
 import AccidentReport from './components/AccidentReport'
+import Messages from './components/Messages'
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
       {/* <NewIncidents/> */}
       {/* <Notifications/> */}
       {/* <Settings/> */}
-      <AccidentReport/>
+      {/* <AccidentReport/> */}
+      <Messages/>
     </div>
   )
 }
